@@ -1,0 +1,57 @@
+body {
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Khula', sans-serif;
+    font-size: 40px;
+
+}
+
+h2, h3, h4, h5, h6, ul, ol {
+    font-family: 'Trirong', serif;
+}
+
+p {
+    font-family: 'Biryani', sans-serif;
+}
+#TopIntro {
+    height: 1000px;
+    background-image: url(andrewWorkPhoto.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'main main main main main'
+    'footer footer footer footer footer';
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    z-index: 2;
+}
+
+.main {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    z-index: 1;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
